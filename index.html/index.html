@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="login-container" id="loginPage">
+    <h2>🔐 Login</h2>
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="text" id="mobile" placeholder="Mobile Number"><br>
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+</div>
+
+<!-- PORTFOLIO -->
+<div id="portfolioPage" style="display:none;">
+
+    <header>
+        <h1>🌟 My Portfolio</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+     <section class="card">
+    <h2>📇 My Details</h2>
+    <p><strong>Name:</strong> Ryne joe shinto</p>
+    <p><strong>Email:</strong> rynejosephshinto@gmail.com</p>
+    <p><strong>Phone:</strong> 8606801414</p>
+</section>                                                                                                                                                                                      
+    <section class="card">
+        <h2>👤 About Me</h2>
+        <p><p>
+I am a Computer Science student with a strong interest in programming and web development. 
+I enjoy learning new technologies and building projects like calculators and student management systems. 
+My goal is to become a skilled software developer.
+</p>
+    </section>
+    <section class="card">
+    <h2>🌐 Connect with Me</h2>
+    
+    <a href="https://github.com/yourusername" target="_blank">🐱 GitHub</a><br>
+    <a href="https://linkedin.com/in/yourusername" target="_blank">💼 LinkedIn</a><br>
+    <a href="mailto:rynejosephshinto@email.com">📧 Email</a>
+</section>
+    <section class="card">
+        <h2>💻 Skills</h2>
+        <ul>
+            <li>C Programming</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card">
+    <h2>📂 My Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+        <h3>📊 Student Average Calculator</h3>
+        <p>This project calculates the average marks and assigns a grade.</p>
+
+        <input type="number" id="m1" placeholder="Mark 1">
+        <input type="number" id="m2" placeholder="Mark 2">
+        <input type="number" id="m3" placeholder="Mark 3">
+        <button onclick="calculateMarks()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <h3>🧮 Simple Calculator</h3>
+        <p>This project performs basic arithmetic operations.</p>
+
+        <input type="number" id="num1" placeholder="Number 1">
+        <input type="number" id="num2" placeholder="Number 2"><br>
+
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+
+        <p id="calcResult"></p>
+    </div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
